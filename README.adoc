@@ -1,0 +1,26 @@
+= super-duper-octo-barnacle
+
+A dumb wrapper around a random library I found on clojars.
+
+== Usage (as an example)
+
+. link:https://github.com/clojars/clojars-web/wiki/Pushing#maven[Setup settings.xml]
+. Change `pom.xml` and update the `groupId` to yours on Clojars
+. `./deploy.sh` will make the jar and update the pom.xml, then upload to clojars
+
+== Usage (as a library)
+
+This library actually does something!
+It outputs your percentile on Github.
+
+[source,shell]
+----
+$ clojure -Sdeps '{:deps {io.dominic/super-duper-octo-barnacle {:mvn/version "RELEASE"}}}' -m io.dominic.super-duper-octo-barnacle.core SevereOverfl0w
+
+WARNING: seqable? already refers to: #'clojure.core/seqable? in namespace: clojure.core.incubator, being replaced by: #'clojure.core.incubator/seqable?
+WARNING: update already refers to: #'clojure.core/update in namespace: clj-http.client, being replaced by: #'clj-http.client/update
+90
+----
+
+I think 90 is bad.
+Please leave me more stars.
