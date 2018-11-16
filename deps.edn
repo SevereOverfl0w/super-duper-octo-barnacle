@@ -1,3 +1,6 @@
 {:paths ["src"]
  :deps {org.clojure/clojure {:mvn/version "1.8.0"}
-        github-percentile {:mvn/version "0.1.0"}}}
+        github-percentile {:mvn/version "0.1.0"}}
+ :aliases
+ {:deploy {:extra-deps {deps-deploy {:mvn/version "RELEASE"}}
+           :main-opts ["-m" "deps-deploy.deps-deploy" "deploy" "super-duper-octo-barnacle.jar"]}}}
