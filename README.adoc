@@ -6,7 +6,12 @@ A dumb wrapper around a random library I found on clojars.
 
 . link:https://github.com/clojars/clojars-web/wiki/Pushing#maven[Setup settings.xml]
 . Change `pom.xml` and update the `groupId` to yours on Clojars
-. `./deploy.sh` will make the jar and update the pom.xml, then upload to clojars
+. {nbsp}
++
+[horizontal]
+maven:: `./mvn-deploy.sh` will upload the jar using `mvn`
+deps deploy:: `./deps-deploy.sh` will upload the jar using `clj` and deps-deploy. Make sure to set `CLOJARS_USERNAME` and `CLOJARS_PASSWORD` 
+
 
 == Usage (as a library)
 
